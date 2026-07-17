@@ -40,6 +40,147 @@
 
 
 <style>
+  #journey{
+
+    padding:100px 8%;
+
+}
+
+.journey-subtitle{
+
+    text-align:center;
+
+    color:#c7c7c7;
+
+    max-width:750px;
+
+    margin:20px auto 70px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.journey-timeline{
+
+    max-width:850px;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+.journey-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    margin-bottom:30px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:28px;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.journey-item:hover{
+
+    transform:translateX(12px);
+
+    border-color:#ff8a3d;
+
+    box-shadow:0 18px 40px rgba(255,138,61,.25);
+
+}
+
+.journey-icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#ff8a3d,#ff5d3a);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    flex-shrink:0;
+
+    box-shadow:0 10px 25px rgba(255,138,61,.35);
+
+}
+
+.journey-content h3{
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.journey-content p{
+
+    color:#ff9d52;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.journey-content span{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+    display:block;
+
+    font-size:16px;
+
+}
+
+.journey-arrow{
+
+    text-align:center;
+
+    font-size:34px;
+
+    color:#ff8a3d;
+
+    margin-bottom:25px;
+
+}
+
+.highlight{
+
+    background:linear-gradient(135deg,#14273d,#0b1d33);
+
+    border:1px solid #ff8a3d;
+
+}
 *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
 body{
 font-family:Poppins,sans-serif;
@@ -235,7 +376,7 @@ nav{flex-direction:column;gap:15px}
 <h1><span class="gradient">Partha Banerjee</span><br>Mumbai</h1>
 <p>Partha Banerjee Mumbai represents a journey of global leadership, strategic vision, and thought leadership built across international markets. With professional experience spanning Dubai, the UAE, and India, Partha Banerjee is recognized for his contributions as an author, business leader, and speaker. Explore his professional achievements, books, leadership insights, and commitment to inspiring professionals through knowledge, innovation, and lifelong learning.</p>
 <div class="btns">
-<a href="#" class="btn primary">Official Website</a>
+<a href="https://drparthabanerjee.com/" class="btn primary">Official Website</a>
 <a href="#about" class="btn secondary">Explore Journey</a>
 </div>
 </div>
@@ -319,16 +460,88 @@ nav{flex-direction:column;gap:15px}
 </section>
 
 <section id="journey">
-<h2 class="section-title">Professional Journey</h2>
-<div class="timeline">
-<div class="step">🇮🇳 Mumbai</div>
-<div class="step">➜</div>
-<div class="step">🇦🇪 UAE</div>
-<div class="step">➜</div>
-<div class="step">🌍 Dubai</div>
-</div>
-</section>
 
+    <h2 class="section-title">Professional Journey</h2>
+
+    <p class="journey-subtitle">
+        A remarkable journey driven by leadership, global experience, continuous learning, and thought leadership.
+    </p>
+
+    <div class="journey-timeline">
+
+        <!-- Step 1 -->
+        <div class="journey-item">
+            <div class="journey-icon">🏢</div>
+            <div class="journey-content">
+                <h3>Mumbai</h3>
+                <p>Career Foundation</p>
+                <span>Built a strong foundation in business, leadership, and professional excellence.</span>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="journey-arrow">
+            ↓
+        </div>
+
+        <!-- Step 2 -->
+        <div class="journey-item">
+            <div class="journey-icon">🌍</div>
+            <div class="journey-content">
+                <h3>UAE</h3>
+                <p>International Leadership</p>
+                <span>Expanded expertise through multicultural collaboration and global business experience.</span>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="journey-arrow">
+            ↓
+        </div>
+
+        <!-- Step 3 -->
+        <div class="journey-item">
+            <div class="journey-icon">🚀</div>
+            <div class="journey-content">
+                <h3>Dubai</h3>
+                <p>Innovation & Strategy</p>
+                <span>Developed strategic leadership while working across international markets.</span>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="journey-arrow">
+            ↓
+        </div>
+
+        <!-- Step 4 -->
+        <div class="journey-item">
+            <div class="journey-icon">✍️</div>
+            <div class="journey-content">
+                <h3>Author</h3>
+                <p>Books & Thought Leadership</p>
+                <span>Published books on leadership, personal development, and global perspectives.</span>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="journey-arrow">
+            ↓
+        </div>
+
+        <!-- Step 5 -->
+        <div class="journey-item highlight">
+            <div class="journey-icon">⭐</div>
+            <div class="journey-content">
+                <h3>Mumbai</h3>
+                <p>Global Recognition</p>
+                <span>Continuing to inspire professionals through writing, leadership, and knowledge sharing.</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 <section>
 <h2 class="section-title">Achievements</h2>
 <div class="stats">
@@ -343,7 +556,7 @@ nav{flex-direction:column;gap:15px}
 <div class="cta">
 <h2 style="font-size:40px;margin-bottom:15px">Ready to Learn More?</h2>
 <p style="margin-bottom:30px">Explore the professional journey and global presence of Partha Banerjee.</p>
-<a href="#" class="btn primary">Visit Official Website</a>
+<a href="https://drparthabanerjee.com/" class="btn primary">Visit Official Website</a>
 </div>
 </section>
 
